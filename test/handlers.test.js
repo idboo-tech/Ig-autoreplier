@@ -120,3 +120,14 @@ test('DM keyword gets an automatic reply, echoes are ignored', async () => {
   await handlers.handleWebhook(dm({ mid: 'b', text: 'price', is_echo: true }));
   assert.deepStrictEqual(calls, [['dm', '555', { text: 'It costs $10' }]]);
 });
+
+test('a list of DM variants sends exactly one of them', async () => {
+  const { calls, handlers } = setup({
+    commentRules: [{ keywords: ['free'], dm: ['Version A {username}', { text: 'Version B' }] }],
+  });
+  await handlers.handleWebhook(commentEvent('FREE'));
+  const dms = calls.filter((c) => c[0] === 'privateReply');
+  assert.strictEqual(dms.length, 1);
+  const text = JSON.stringify(dms[0][2]);
+  assert.ok(text.includes('Version A @fan') || text.includes('Version B'), text);
+});

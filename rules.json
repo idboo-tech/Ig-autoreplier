@@ -1,44 +1,51 @@
 {
-  "commentRules": [
-    {
-      "name": "Free guide",
-      "keywords": ["guide", "free guide"],
+  "categories": {
+    "free-drop": {
+      "keywords": ["free"],
       "match": "word",
-      "posts": [],
-      "commentReplies": [
-        "Sent you a DM {username} 📩",
-        "Check your DMs! 🙌",
-        "Just sent it over, check your inbox ✨"
-      ],
-      "dm": {
-        "text": "Hey {username}! Thanks for commenting 🙏 Here's your free guide:",
-        "buttons": [
-          { "title": "Get the guide", "url": "https://example.com/guide" }
-        ]
-      }
+      "commentReplies": ["Check your DMs 🎮📩", "Sifetlik f DM {username} 🔥"],
+      "dm": [
+        {
+          "text": "Hey {username}! 🎮 Here are this week's free games, grab them before they're gone:",
+          "buttons": [{ "title": "Claim the games", "url": "{link}" }]
+        },
+        {
+          "text": "Heeey {username}! 🎁 Hadi l free games dyal had l week, claim them 9bel maymchiw, ah o matnsach tpartager l post m3a s7abek 😉 :",
+          "buttons": [{ "title": "Claim the games", "url": "{link}" }]
+        }
+      ]
     },
-    {
-      "name": "Price question",
-      "keywords": ["price", "how much", "cost"],
-      "match": "contains",
-      "posts": [],
-      "commentReplies": ["Sent you the details in DM 💬"],
-      "dm": {
-        "text": "Hi {username}! Our plans start at $19/month. Full pricing: https://example.com/pricing"
-      }
-    }
-  ],
-  "dmRules": [
-    {
-      "name": "Guide via DM",
-      "keywords": ["guide"],
+    "game": {
+      "keywords": ["game"],
       "match": "word",
-      "reply": {
-        "text": "Here you go! 👇",
-        "buttons": [
-          { "title": "Get the guide", "url": "https://example.com/guide" }
-        ]
-      }
+      "commentReplies": ["Sent you the link 🎮", "Rah ghed seft lik f DM📩 , check 😉"],
+      "dm": [
+        {
+          "text": "Here's the game from the video 👇",
+          "buttons": [{ "title": "Store page", "url": "{link}" }]
+        },
+        {
+          "text": "salaaam choukran 3la lcomment, Hadi l game li f video 👇",
+          "buttons": [{ "title": "Store page", "url": "{link}" }]
+        }
+      ]
+    },
+    "collab": {
+      "keywords": ["collab"],
+      "match": "word",
+      "commentReplies": ["Sent you the details in DM 💬", "Check your inbox ✨"],
+      "dm": [
+        {
+          "text": "Thanks for reaching out {username}! Here's my media kit and contact 👇",
+          "buttons": [{ "title": "Media kit", "url": "{link}" }]
+        },
+        {
+          "text": "Merci {username}! Here's how to work with me 👇",
+          "buttons": [{ "title": "Media kit", "url": "{link}" }]
+        }
+      ]
     }
-  ]
+  },
+  "commentRules": [],
+  "dmRules": []
 }

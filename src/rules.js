@@ -35,6 +35,12 @@ function matches(text, keywords, match = 'word') {
 }
 
 function validateMessage(msg, where) {
+  // A list means "pick one of these at random", so repeat DMs look natural.
+  if (Array.isArray(msg)) {
+    if (!msg.length) throw new Error(`${where}: list of variants is empty`);
+    msg.forEach((m, i) => validateMessage(m, `${where}[${i}]`));
+    return;
+  }
   if (typeof msg === 'string') return;
   if (!msg || typeof msg.text !== 'string' || !msg.text.trim()) {
     throw new Error(`${where}: needs a "text"`);
@@ -45,8 +51,32 @@ function validateMessage(msg, where) {
   if ((msg.buttons || []).length > 3) throw new Error(`${where}: at most 3 buttons`);
 }
 
+// Replace "{link}" in every string of a template (texts, button urls, ...).
+function insertLink(value, link) {
+  if (typeof value === 'string') return value.split('{link}').join(link);
+  if (Array.isArray(value)) return value.map((v) => insertLink(v, link));
+  if (value && typeof value === 'object') {
+    return Object.fromEntries(Object.entries(value).map(([k, v]) => [k, insertLink(v, link)]));
+  }
+  return value;
+}
+
+// A rule like { "category": "free-drop", "posts": [...], "link": "..." } takes its
+// keywords and messages from data.categories["free-drop"], with {link} filled in.
+function expandCategory(rule, categories, where) {
+  if (!rule.category) return rule;
+  const template = categories[rule.category];
+  if (!template) throw new Error(`${where}: unknown category "${rule.category}"`);
+  const needsLink = JSON.stringify(template).includes('{link}');
+  if (needsLink && !rule.link) throw new Error(`${where}: category "${rule.category}" needs a "link"`);
+  return { name: rule.category, ...insertLink(template, rule.link || ''), ...rule };
+}
+
 function validateRules(data) {
-  const commentRules = data.commentRules || [];
+  const categories = data.categories || {};
+  const commentRules = (data.commentRules || []).map((rule, i) =>
+    expandCategory(rule, categories, `commentRules[${i}]`),
+  );
   const dmRules = data.dmRules || [];
   const check = (rule, where) => {
     if (!Array.isArray(rule.keywords) || rule.keywords.length === 0) {

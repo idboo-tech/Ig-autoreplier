@@ -76,6 +76,35 @@ Edit `rules.json` (it starts as a copy of `rules.example.json`). Example:
 | `dm` | The private message. Plain text (`"dm": "hello"`) or `{ "text", "buttons" }` with up to 3 link buttons. Optional. |
 | `{username}` | Replaced with the commenter's `@username`. |
 
+`dm` (and a DM rule's `reply`) can also be a **list** of messages. One is picked
+at random each time, like `commentReplies`.
+
+#### Categories: same texts, different link per post
+
+Write a category's keyword, replies and DMs once under `categories`, using
+`{link}` where the post's link goes. Then each post only needs one short rule:
+
+```json
+{
+  "categories": {
+    "game": {
+      "keywords": ["game"],
+      "commentReplies": ["Sent you the link 🎮", "Check your DMs 📩"],
+      "dm": [
+        { "text": "Here's the game 👇", "buttons": [{ "title": "Store page", "url": "{link}" }] },
+        { "text": "Hadi l game 👇", "buttons": [{ "title": "Store page", "url": "{link}" }] }
+      ]
+    }
+  },
+  "commentRules": [
+    { "category": "game", "posts": ["17900000000000001"], "link": "https://store.steampowered.com/app/1" },
+    { "category": "game", "posts": ["17900000000000002"], "link": "https://store.steampowered.com/app/2" }
+  ]
+}
+```
+
+The same keyword can then send a different link on each post.
+
 Rules are checked top to bottom and the first match wins. The server reloads
 `rules.json` automatically when you save it, so there's no need to restart.
 

@@ -3,7 +3,8 @@ const { buildMessage, buildTextFallback } = require('./instagram');
 
 function createHandlers({ ig, store, getRules, log = console }) {
   // Send a message, retrying as plain text if Instagram rejects the button template.
-  async function sendWithFallback(send, msg, vars) {
+  async function sendWithFallback(send, variants, vars) {
+    const msg = Array.isArray(variants) ? pickRandom(variants) : variants;
     const fill = (t) => fillTemplate(t, vars);
     try {
       await send(buildMessage(msg, fill));
