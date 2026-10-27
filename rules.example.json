@@ -1,0 +1,44 @@
+{
+  "commentRules": [
+    {
+      "name": "Free guide",
+      "keywords": ["guide", "free guide"],
+      "match": "word",
+      "posts": [],
+      "commentReplies": [
+        "Sent you a DM {username} 📩",
+        "Check your DMs! 🙌",
+        "Just sent it over, check your inbox ✨"
+      ],
+      "dm": {
+        "text": "Hey {username}! Thanks for commenting 🙏 Here's your free guide:",
+        "buttons": [
+          { "title": "Get the guide", "url": "https://example.com/guide" }
+        ]
+      }
+    },
+    {
+      "name": "Price question",
+      "keywords": ["price", "how much", "cost"],
+      "match": "contains",
+      "posts": [],
+      "commentReplies": ["Sent you the details in DM 💬"],
+      "dm": {
+        "text": "Hi {username}! Our plans start at $19/month. Full pricing: https://example.com/pricing"
+      }
+    }
+  ],
+  "dmRules": [
+    {
+      "name": "Guide via DM",
+      "keywords": ["guide"],
+      "match": "word",
+      "reply": {
+        "text": "Here you go! 👇",
+        "buttons": [
+          { "title": "Get the guide", "url": "https://example.com/guide" }
+        ]
+      }
+    }
+  ]
+}

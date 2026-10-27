@@ -1,0 +1,15 @@
+{
+  "name": "ig-autoreplier",
+  "version": "1.0.0",
+  "description": "ManyChat-style Instagram auto-replier: reply to comments and DM people who comment a keyword.",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20.12"
+  },
+  "license": "MIT"
+}
