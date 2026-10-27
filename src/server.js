@@ -13,6 +13,8 @@ const log = {
   error: (...a) => console.error(new Date().toISOString(), 'ERROR', ...a),
 };
 
+const PRIVACY_PAGE = fs.readFileSync(require('node:path').join(__dirname, 'privacy.html'), 'utf8');
+
 function isValidSignature(rawBody, header, appSecret) {
   if (!header || !header.startsWith('sha256=')) return false;
   const expected = crypto.createHmac('sha256', appSecret).update(rawBody).digest('hex');
@@ -29,6 +31,12 @@ function createServer({ verifyToken, appSecret, handleWebhook }) {
 
     if (req.method === 'GET' && url.pathname === '/') {
       res.writeHead(200, { 'Content-Type': 'text/plain' }).end('ig-autoreplier is running');
+      return;
+    }
+
+    // Meta requires a public privacy policy URL before the app can go live.
+    if (req.method === 'GET' && url.pathname === '/privacy') {
+      res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' }).end(PRIVACY_PAGE);
       return;
     }
 

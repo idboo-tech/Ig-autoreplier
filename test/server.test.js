@@ -52,3 +52,11 @@ test('POST requires a valid Instagram signature', async () => {
     assert.strictEqual(received.length, 1);
   });
 });
+
+test('privacy policy page is public', async () => {
+  await withServer(async (base) => {
+    const res = await fetch(`${base}/privacy`);
+    assert.strictEqual(res.status, 200);
+    assert.match(await res.text(), /Privacy Policy/);
+  });
+});

@@ -91,31 +91,6 @@
       ]
     }
   },
-  "commentRules": [
-    {
-      "name": "TEMP test (remove after testing)",
-      "keywords": [
-        "testbot"
-      ],
-      "match": "word",
-      "posts": [],
-      "commentReplies": [
-        "Test reply 1 ✅ {username}",
-        "Test reply 2 ✅"
-      ],
-      "dm": [
-        "Test DM 1 ✅ Hey {username}, the auto-replier works!",
-        {
-          "text": "Test DM 2 ✅ with a button",
-          "buttons": [
-            {
-              "title": "Open Instagram",
-              "url": "https://www.instagram.com/idboo_/"
-            }
-          ]
-        }
-      ]
-    }
-  ],
+  "commentRules": [],
   "dmRules": []
 }
