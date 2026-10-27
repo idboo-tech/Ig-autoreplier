@@ -44,11 +44,7 @@ notification is called a "webhook"). The server checks your rules and responds.
 
 ### 1. Configure your rules
 
-```bash
-cp rules.example.json rules.json
-```
-
-Edit `rules.json`. Example:
+Edit `rules.json` (it starts as a copy of `rules.example.json`). Example:
 
 ```json
 {
@@ -177,14 +173,23 @@ Put the new token in `.env` and restart.
 
 ---
 
-## Deploying (example: Render)
+## Deploying on Render (easiest)
 
-1. Push this repo to GitHub and create a new **Web Service** on Render from it.
-2. Build command: *(leave empty)*. Start command: `npm start`.
-3. Add the variables from `.env` under **Environment**. Since `rules.json` is
-   git-ignored, either commit your own rules file under another name and set
-   `RULES_FILE` to it, or add `rules.json` as a Render *Secret File*.
-4. Use the Render URL + `/webhook` as your callback URL.
+The repo includes a `render.yaml`, so Render sets everything up for you:
+
+1. Sign up at https://render.com with your GitHub account.
+2. Click **New → Blueprint**, pick this repository, and click **Apply**.
+3. When asked, paste your **`APP_SECRET`** and **`IG_ACCESS_TOKEN`**.
+   (`VERIFY_TOKEN` is generated for you. Find it under the service's
+   **Environment** tab.)
+4. Your callback URL is `https://<your-service>.onrender.com/webhook`.
+
+To change your keywords and messages, edit `rules.json` on GitHub. Render
+redeploys automatically.
+
+Note: Render's free plan goes to sleep after 15 minutes without traffic. The
+first comment after a quiet period can take about a minute (Instagram retries
+for you). The $7/month plan stays awake.
 
 ---
 
