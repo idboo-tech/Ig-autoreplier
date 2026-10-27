@@ -1,51 +1,121 @@
 {
   "categories": {
     "free-drop": {
-      "keywords": ["free"],
+      "keywords": [
+        "free"
+      ],
       "match": "word",
-      "commentReplies": ["Check your DMs 🎮📩", "Sifetlik f DM {username} 🔥"],
+      "commentReplies": [
+        "Check your DMs 🎮📩",
+        "Sifetlik f DM {username} 🔥"
+      ],
       "dm": [
         {
           "text": "Hey {username}! 🎮 Here are this week's free games, grab them before they're gone:",
-          "buttons": [{ "title": "Claim the games", "url": "{link}" }]
+          "buttons": [
+            {
+              "title": "Claim the games",
+              "url": "{link}"
+            }
+          ]
         },
         {
           "text": "Heeey {username}! 🎁 Hadi l free games dyal had l week, claim them 9bel maymchiw, ah o matnsach tpartager l post m3a s7abek 😉 :",
-          "buttons": [{ "title": "Claim the games", "url": "{link}" }]
+          "buttons": [
+            {
+              "title": "Claim the games",
+              "url": "{link}"
+            }
+          ]
         }
       ]
     },
     "game": {
-      "keywords": ["game"],
+      "keywords": [
+        "game"
+      ],
       "match": "word",
-      "commentReplies": ["Sent you the link 🎮", "Rah ghed seft lik f DM📩 , check 😉"],
+      "commentReplies": [
+        "Sent you the link 🎮",
+        "Rah ghed seft lik f DM📩 , check 😉"
+      ],
       "dm": [
         {
           "text": "Here's the game from the video 👇",
-          "buttons": [{ "title": "Store page", "url": "{link}" }]
+          "buttons": [
+            {
+              "title": "Store page",
+              "url": "{link}"
+            }
+          ]
         },
         {
           "text": "salaaam choukran 3la lcomment, Hadi l game li f video 👇",
-          "buttons": [{ "title": "Store page", "url": "{link}" }]
+          "buttons": [
+            {
+              "title": "Store page",
+              "url": "{link}"
+            }
+          ]
         }
       ]
     },
     "collab": {
-      "keywords": ["collab"],
+      "keywords": [
+        "collab"
+      ],
       "match": "word",
-      "commentReplies": ["Sent you the details in DM 💬", "Check your inbox ✨"],
+      "commentReplies": [
+        "Sent you the details in DM 💬",
+        "Check your inbox ✨"
+      ],
       "dm": [
         {
           "text": "Thanks for reaching out {username}! Here's my media kit and contact 👇",
-          "buttons": [{ "title": "Media kit", "url": "{link}" }]
+          "buttons": [
+            {
+              "title": "Media kit",
+              "url": "{link}"
+            }
+          ]
         },
         {
           "text": "Merci {username}! Here's how to work with me 👇",
-          "buttons": [{ "title": "Media kit", "url": "{link}" }]
+          "buttons": [
+            {
+              "title": "Media kit",
+              "url": "{link}"
+            }
+          ]
         }
       ]
     }
   },
-  "commentRules": [],
+  "commentRules": [
+    {
+      "name": "TEMP test (remove after testing)",
+      "keywords": [
+        "testbot"
+      ],
+      "match": "word",
+      "posts": [],
+      "commentReplies": [
+        "Test reply 1 ✅ {username}",
+        "Test reply 2 ✅"
+      ],
+      "dm": [
+        "Test DM 1 ✅ Hey {username}, the auto-replier works!",
+        {
+          "text": "Test DM 2 ✅ with a button",
+          "buttons": [
+            {
+              "title": "Open Instagram",
+              "url": "https://www.instagram.com/idboo_/"
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "dmRules": []
 }
