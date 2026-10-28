@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Notion",
+      "mcp__claude-code-remote__list_events",
+      "mcp__claude-code-remote__list_sessions",
+      "mcp__claude-code-remote__get_session"
+    ]
+  }
+}
