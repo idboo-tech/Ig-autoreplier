@@ -13,7 +13,7 @@ Built **only from what we made together in Claude**:
 | | Week 1 (Oct 27 – Nov 2) | Week 2 (Nov 3 – Nov 9) | Total |
 |---|---|---|---|
 | 🎬 Reels | 7 | 5 | 12 |
-| 🖼️ Carousels | 3 | 3 | 6 |
+| 🖼️ Carousels | 3 | 4 | 7 |
 | 📱 Stories | daily | daily | 14 days |
 
 **Weekly slots, so your followers know what's coming:**
@@ -40,7 +40,7 @@ Built **only from what we made together in Claude**:
 | **Sat 31** | 🎬 Reel: **P.T., the horror game you can't download** 🎃 | #13 | 🎬 | **Halloween** | "Did you ever play it?" |
 | **Sun 1** | 🖼️ Carousel: **FREE DROP #2, "still free until Thursday"** (13:00) | `carousels/fd02/` | ✂️ rebuild in the new linen style | 3 days after the reel, before the deadline | Comment **FREE** |
 | **Sun 1** | 🎬 Reel: **Encarta Junior** nostalgia (cover D, caption ready) | `encarta junior/render/` | ✅ *(skip if already posted)* | Sunday-evening nostalgia | "Your best memory with it 👇" |
-| **Mon 2** | 🎬 Reel: **Moroccan team xProjekt → Free Fire World Finals** (Bangkok, $1.2M) | #66 | 🎬 ⚠️ player names | Must go out **before Fri 6 Nov** | Tag a Free Fire friend |
+| **Mon 2** | 🎬 Reel: **3 November indie picks** (Theos 4 Nov · Underkeep + Where the Seeds Fall 5 Nov) | #09 | 🎬 | Written for Mon 2. Goes out before the release dates (#66 xProjekt dropped) | "Which one is yours?" + save |
 
 **Backup if a day slips:** #10 *The real legend behind Sker Ritual* (fits Fri 30 or Sat 31).
 
@@ -55,11 +55,12 @@ Built **only from what we made together in Claude**:
 | **Wed 4** | 🖼️ Carousel: **Encarta Junior** (13:00) | `carousels/enc/` | ✅ | 3 days after the reel | Send it to a 2000s kid |
 | **Thu 5** | 🎬 Reel: **FREE DROP #3**: fill the template with Epic's game | #02 | 🎬 template | Epic drop, **after 17:00** | Comment **FREE** |
 | **Fri 6** | 🎬 Reel: **A Reddit comment vs EA** *or* **One guy fixed GTA Online's loading** | #20 / #17 | 🎬 | "One person changed a company" series. #17 builds GTA 6 hype | "Know any other story like this?" |
+| **Fri 6** | 🖼️ Carousel: **medkit quiz**: question → A/B/C → answer on the last slide (13:00) | from #54 | Claude builds the slides | 3 days after the #54 reel; people swipe to the end for the answer | Comment A / B / C |
 | **Sat 7** | 🖼️ Carousel: **3 effects to turn off**, on/off screenshots side by side | from #77 | 🎬 screenshots | The carousel people save, 3 days after the reel | Save it for your next game |
 | **Sun 8** | 🖼️ Carousel: **meme carousel: gaming in Morocco** (Free Fire, prices, parents, internet) | new | to make | Memes beat informative posts on your page | Send it to your squad |
 | **Mon 9** | 🎬 Reel: **GTA 6 is 10 days away** (update the "3 weeks" script) | #04 | 🎬 ⚠️ price | GTA 6 launches **Nov 19** | "Day-one or waiting? 👇" |
 
-**Backup reels this week:** #09 *3 November indie picks* · #22 *Flappy Bird: $50K a day, deleted* · #64 *FIFA packs = gambling in Belgium* (⚠️ old reports)
+**Backup reels this week:** #22 *Flappy Bird: $50K a day, deleted* · #64 *FIFA packs = gambling in Belgium* (⚠️ old reports)
 
 ---
 
@@ -69,7 +70,7 @@ Built **only from what we made together in Claude**:
 |---|---|---|
 | **Tue 27** | #53, #03 | Tue 27, Wed 28 |
 | **Wed 28** | #01 (then add the game footage after 16:00 Thu), #05, #13 | Thu 29, Fri 30, Sat 31 |
-| **Sat 31** | #66, #54, #77 (+ on/off screenshots for the carousel) | Mon 2, Tue 3, Wed 4 |
+| **Sat 31** | #09, #54, #77 (+ on/off screenshots for the carousel) | Mon 2, Tue 3, Wed 4 |
 | **Wed 4** | #02 talking parts, #17 or #20, #04 | Thu 5, Fri 6, Mon 9 |
 
 Use your editing workflow from `CLAUDE.md`: assets first → beat table and 3 hooks → stills → render with proof → self-review.
@@ -84,6 +85,7 @@ Use your editing workflow from `CLAUDE.md`: assets first → beat table and 3 ho
 | FSR 4.1 (`fsr41`, 7 slides) | ✅ | **Fri 30** | Repurposes your best converter |
 | FREE DROP #2 (`fd02`, 7 slides) | ✂️ rebuild in the new style | **Sun 1** | 2–4 days after the reel |
 | Encarta Junior (`enc`) | ✅ | **Wed 4** | 2–4 days after the reel |
+| Medkit quiz (#54) | to make | **Fri 6** | Quiz: the answer on the last slide makes people swipe |
 | 3 effects to turn off (#77) | to make | **Sat 7** | List or reveal content works as a carousel |
 | Gaming in Morocco memes | to make | **Sun 8** | Carousel-only idea |
 
@@ -114,7 +116,7 @@ All carousels use your locked style: **1080×1440 (3:4)**, dark navy cover with 
 3. **Double down on the settings series.** The FSR explainer brought the most follows, and #73–#78 are the same type. That's why Wednesday is the settings slot. After #77, do **#76 Frame Generation**, which follows naturally from FSR.
 4. **Test the quiz format once (#54) before committing.** If watch-through is good, make it a weekly slot in week 3 (#55–#65 are ready).
 5. **Add one meme carousel a week.** You said memes beat informative posts on your page, and they get the most sends.
-6. **Check every ⚠️ before filming:** xProjekt player names (#66), the GTA 6 price (#04), Anti-Lag 2 game support (#78). Run `tools/verify-games.js` before any game name goes on screen. Check the Epic link works on the 29th.
+6. **Check every ⚠️ before filming:** the GTA 6 price (#04), Anti-Lag 2 game support (#78). Run `tools/verify-games.js` before any game name goes on screen. Check the Epic link works on the 29th.
 7. **Finish the old reel covers.** Instagram is logged out in the browser pane, so 5 covers plus everything older than your last 12 are blocked. Sign in and say "finish the covers" so the grid looks consistent.
 8. **Update the status column in the scripts README** (📝 → 🎬 → ✂️ → ✅) as you go, so the index stays your single planner.
 9. **Prepare week 3 now:** GTA 6 launches **Thu Nov 19**, the same day as FREE DROP #5, and Black Friday / Steam's autumn sale arrives late November. Script a "GTA 6 launch day" reel and a "best Black Friday gaming deals in Morocco" carousel during week 2.
