@@ -1,10 +1,17 @@
 {
   "permissions": {
     "allow": [
+      "Bash",
+      "Read",
+      "Edit",
+      "Write",
+      "Glob",
+      "Grep",
+      "WebSearch",
+      "WebFetch",
       "mcp__Notion",
-      "mcp__claude-code-remote__list_events",
-      "mcp__claude-code-remote__list_sessions",
-      "mcp__claude-code-remote__get_session"
+      "mcp__github",
+      "mcp__claude-code-remote"
     ]
   }
 }
