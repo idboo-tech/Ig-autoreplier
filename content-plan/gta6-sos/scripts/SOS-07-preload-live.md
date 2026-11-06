@@ -19,7 +19,7 @@
 > فالـPS5: دخل لـ**Game Library**، من بعد **Purchased**، اختار **GTA VI** وكليكي على **Download**.
 
 **③ XBOX**: on-screen steps
-> فالـXbox: دخل لـ**My games & apps**، قلب على GTA VI فاللعاب اللي شريتي، و**Install**.
+> فالـXbox: دخل لـ**My games & apps**، قلب على GTA VI فالألعاب اللي شريتي، و**Install**.
 
 **④ TIP**: punch in ~115%; the Rest Mode menu
 > النصيحة: شعل "**Stay connected to the internet**" فالـRest Mode… والـPS5 تكمل التحميل وهي ناعسة.
