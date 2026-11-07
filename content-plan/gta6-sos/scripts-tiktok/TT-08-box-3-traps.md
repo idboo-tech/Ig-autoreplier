@@ -38,5 +38,5 @@
 - Arabic: «**3 فخاخ** فالعلبة» · English: "GTA 6 BOX" · tag "PART 2/3".
 
 ## Caption
-العلبة ديال GTA 6: بلا ديسك، بلا Ultimate، بلا GTA+، والكود مربوط بالبلاد 📦 Part 3 غدا!
+العلبة ديال GTA 6: بلا ديسك، بلا Ultimate، بلا GTA+، والكود مربوط بالبلاد 📦 Part 3 الليلة!
 #gta6 #gta6maroc #ps5maroc #gtavi #darija

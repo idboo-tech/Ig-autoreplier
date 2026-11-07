@@ -19,15 +19,15 @@ Everything else is paused until Mon 23 Nov (FREE DROP #4 on Thu 12 stays as the 
 | Day | 13:00 reel | 17:00 carousel | 20:00 reel |
 |---|---|---|---|
 | **Sat 7** · J-12 | #01 13 years of waiting *(16:00)* | | #02 Welcome to Leonida |
-| **Sun 8** · J-11 | #03 $80 or $100? Editions | **C1** Everything confirmed | #04 Six stars |
-| **Mon 9** · J-10 | #05 Morocco: no disc + region lock | | #06 Free up 212 GB tonight |
+| **Sun 8** · J-11 | 🎵 TT-07 The $20 Ultimate: 16 extras (Part 1/3) | **C1** Everything confirmed | #04 Six stars |
+| **Mon 9** · J-10 | 🎵 TT-08 The box: 3 traps + Morocco (Part 2/3) | | 🎵 TT-09 Will 212 GB fit? (Part 3/3) |
 | **Tue 10** · J-9 | #07 Pre-load is live (how-to) | **C2** Leonida = Florida | #08 The hotel-room hacker |
 | **Wed 11** · J-8 | #09 Jason & Lucia | **C3** Buying in Morocco: 5 rules | #10 Who will betray them? |
 | **Thu 12** · J-7 | #11 $750 M before launch | *(17:05 FREE DROP #4 reel)* | #12 Life in Leonida |
 | **Fri 13** · J-6 | #13 30 or 60 fps? | **C4** Meet the cast | #14 Leonida Man |
-| **Sat 14** · J-5 | #15 No PC: so when? | | #16 No online on day one |
+| **Sat 14** · J-5 | #15 No PC: so when? | 🎵 **TT-03** Forget your GTA 5 habits | #16 No online on day one |
 | **Sun 15** · J-4 | Pack #17 One guy fixed GTA Online's loading | **C5** 10 things to do | #17 5 details from the 27-min gameplay |
-| **Mon 16** · J-3 | #18 GTA 6 in 7 numbers | | #19 The road to 19 Nov |
+| **Mon 16** · J-3 | #18 GTA 6 in 7 numbers | 🎵 **TT-05** HUD guide (save) | #19 The road to 19 Nov |
 | **Tue 17** · J-2 | #20 The music (+ streamers) | **C6** Launch night: times + stream | #21 Who plays first? + my stream |
 | **Wed 18** · J-1 | #22 Reviews are in *(15:00)* | | #23 Final checklist *(21:00)* → **🔴 LIVE 23:00** |
 | **Thu 19** | L1 First minute in GTA 6 | | L2 Trying to get 6 stars |
@@ -41,13 +41,15 @@ Live: **Wed 18 23:00** · Thu 19 20:00 · Fri 20 20:00 · Sat 21 16:00 · Sun 22
 
 | Batch | When | Film | Posts |
 |---|---|---|---|
-| **G1** | **Fri 6 (tonight) or Sat 7 morning** | #01 #02 #03 #04 | Sat 7, Sun 8 |
-| **G2** | **Sun 8** | #05 #06 #08 #09 #10 + the talking parts of #07 (screen-record the pre-load after 00:00 on Tue 10) | Mon 9 → Wed 11 |
+| **G1** | **Fri 6 (tonight) or Sat 7 morning** | #01 #02 TT-07 #04 | Sat 7, Sun 8 |
+| **G2** | **Sun 8** | TT-08 TT-09 #08 #09 #10 + the talking parts of #07 (screen-record the pre-load after 00:00 on Tue 10) | Mon 9 → Wed 11 |
 | **G3** | **Wed 11** | #11 #12 #13 (+ your 30/60 fps split on PC) #14 #15 #16 + FREE DROP #4 talking parts | Thu 12 → Sat 14 |
 | **G4** | **Sat 14** | Pack #17, #17 #18 #19 #20 #21 #23 + the intro/outro of #22 | Sun 15 → Wed 18 |
 | Live | Wed 18 → Sun 22 | Clips from the stream (F9 replay buffer) | Thu 19 → Sun 22 |
 
-Claude makes all 6 carousels: tell me "build C1" (etc.) a day before each one.
+Claude makes all the carousels (C1–C6, TT-03, TT-05): tell me "build C1" (etc.) a day before each one.
+
+🎵 = from the TikTok-style pack in `scripts-tiktok/` (see `tiktok-references.md`). SOS #03, #05 and #06 were replaced on 7 Nov and stay in `scripts/` as backups.
 
 ## Rules for the whole SOS
 1. **The first second decides everything**: each script has 3 hook options; pick the one that works with the sound off.
