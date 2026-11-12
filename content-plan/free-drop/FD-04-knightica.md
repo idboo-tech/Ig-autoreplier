@@ -16,8 +16,8 @@
 | Next drop | #5 on **Thu 19 Nov**, the same day as GTA 6. Epic shows the game today at 17:00 |
 
 ## Script (Darija)
-**① HOOK**: you; «**بلا ما تضرب**؟» behind your head, tiny knights marching in
-> لعبة كتربحها… **بلا ما تضرب حتى ضربة**؟ و**فابور** هاد السيمانة.
+**① HOOK**: you; «**قبل GTA 6**» behind your head, a "7 DAYS" countdown chip
+> آخر لعبة **فابور** قبل GTA 6… وعندك **سيمانة** وحدة باش تاخدها.
 
 **② WHAT**: Knightica gameplay, the board with units placed
 > سميتها **Knightica**: كتختار الجيش ديالك، كتحط كل واحد فبلاصتو… والمعركة كتدوز **بوحدها**.
@@ -34,13 +34,10 @@
 **⑥ SHARE**
 > صيفطها لصاحبك اللي كيقول ليك «أنا **استراتيجي**».
 
-### Optional line
-- After ④, the GTA tie-in: «والخميس الجاي؟ نهار **GTA 6**. خودها دابا قبل ما تنساها.»
-
 ## Hook options
-- **A. No hits:** frame 1 = you + «**بلا ما تضرب**؟» behind your head (in the script).
-- **B. Gameplay first:** frame 1 = two armies crashing into each other, cut to your face at 1.0 s.
-- **C. Deal card first:** price struck → «**فابور**» over your face.
+- **A. Last one before GTA 6 (in the script):** frame 1 = you + «**قبل GTA 6**» behind your head.
+- **B. Smart or lucky:** «هاد اللعبة غادي تبين ليك واش نتا **ذكي**… ولا غير محظوظ. و**فابور**.»
+- **C. No hits (the old one):** «لعبة كتربحها… **بلا ما تضرب حتى ضربة**؟ و**فابور** هاد السيمانة.»
 
 ## Keep the series consistent
 - Tag `FREE DROP #4 | الخميس 12 نونبر`, card, next-drop chip `#5 · الخميس 19 نونبر`, MATZGELCH DROP JAYA, phone DM.
